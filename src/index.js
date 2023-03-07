@@ -1,22 +1,22 @@
 import addScore from '../modules/add-score.js';
 import getScores from '../modules/get-score.js';
-import '../src/';
+import './style.css';
 
 const scoresList = document.querySelector('.scores-list');
-const submitButton = document.querySelector('.submit-button');
-const refreshButton = document.querySelector('.refresh');
-const message = document.querySelector('.message');
+const submitScore = document.querySelector('.submit-score');
+const refreshScore = document.querySelector('.refresh-score');
+const msg = document.querySelector('.success-msg');
 
-// createGame('Cool Game', message);
+// creating the msg here....
 
-refreshButton.addEventListener('click', (e) => {
-  e.preventDefault();
+refreshScore.addEventListener('click', (event) => {
+  event.preventDefault();
   getScores(scoresList);
 });
 
-submitButton.addEventListener('click', (e) => {
-  e.preventDefault();
+submitScore.addEventListener('click', (event) => {
+  event.preventDefault();
   const user = document.querySelector('.user').value;
   const score = document.querySelector('.score').value;
-  addScore(scoresList, user, score, message);
+  addScore(scoresList, user, score, msg);
 });

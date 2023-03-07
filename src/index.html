@@ -16,17 +16,23 @@
     </header>
 
     <main>
-      <section>
+      <section class="all-container">
         <article class="scores-list-container">
-          <div>
-            <h2>Recent Scores</h2>
-            <button class="refresh">Refresh</button>
+          <div class="scoresNreset">
+            <h2 class="scores-title">Recent Scores</h2>
+            <button class="refresh-score" type="reset">Refresh</button>
           </div>
-          <ul class="scores-list"></ul>
+          <ul class="scores-list">
+            <li>Besu</li>
+            <li>Aman</li>
+            <li>Midne</li>
+            <li>Microverse</li>
+            <li>React</li>
+          </ul>
         </article>
-
+        <div class="middle-line"></div>
         <aside class="name-score">
-          <h3>Add your score</h3>
+          <h3 class="bg-add">Add your score</h3>
           <form action="" method="POST" class="add-nameNscore">
             <input
               type="text"
@@ -42,7 +48,7 @@
               id="score"
               placeholder="Your Score"
             />
-            <button class="submit-score">Submit</button>
+            <button class="submit-score" type="submit">Submit</button>
           </form>
         </aside>
       </section>
