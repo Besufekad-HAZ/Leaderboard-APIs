@@ -1,0 +1,22 @@
+import addScore from '../modules/add-score.js';
+import getScores from '../modules/get-score.js';
+import '../src/';
+
+const scoresList = document.querySelector('.scores-list');
+const submitButton = document.querySelector('.submit-button');
+const refreshButton = document.querySelector('.refresh');
+const message = document.querySelector('.message');
+
+// createGame('Cool Game', message);
+
+refreshButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  getScores(scoresList);
+});
+
+submitButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  const user = document.querySelector('.user').value;
+  const score = document.querySelector('.score').value;
+  addScore(scoresList, user, score, message);
+});
