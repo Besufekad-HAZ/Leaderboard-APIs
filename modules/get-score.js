@@ -9,8 +9,6 @@ const scoreGet = async (scores) => {
     if (json.result.length > 0) {
       const trophy = sortScores.indexOf(element) < 3 ? '🏆' : '';
       const number = sortScores.indexOf(element) + 1;
-      // let image;
-      // image.src = '../assets/player-icon.svg';
       scores.innerHTML += `<li class="list-container">
       <div class="name-icon"> <div>#${number}</div> <i class="fas fa-user"></i> <div>${element.user}</div> </div> <div>${element.score} ${trophy}</div></li>`;
     } else {

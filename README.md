@@ -78,6 +78,7 @@ A website for organizing daily activities
 - **[CSS]**
 - **[Javascript]** ---> with ES6
 - **[Webpack]**
+- **[API's(Notion)]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,7 +86,7 @@ A website for organizing daily activities
 
 ## 🚀 Screenshot <a name="screenshot"></a>
 
-![image](https://user-images.githubusercontent.com/23375153/221012988-791c6138-f87c-41e3-9a78-35ba4944ae8f.png)
+![image]https://user-images.githubusercontent.com/23375153/224085035-76f1202f-c6d9-4fb2-824d-7af93887b1ce.png
 
 ## 💻 Loom Presentation Video <a name="loom-video"></a>
 
@@ -95,7 +96,7 @@ A website for organizing daily activities
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://besufekad-haz.github.io/To-Do-list/dist/)
+- [Live Demo Link](N/A)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
