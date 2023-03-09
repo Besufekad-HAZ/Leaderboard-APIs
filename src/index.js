@@ -1,22 +1,20 @@
-import addScore from '../modules/add-score.js';
-import getScores from '../modules/get-score.js';
 import './style.css';
+import scoreAdd from '../modules/add-score.js';
+import getScores from '../modules/get-score.js';
 
-const scoresList = document.querySelector('.scores-list');
-const submitScore = document.querySelector('.submit-score');
+const listScores = document.querySelector('.scores-list');
 const refreshScore = document.querySelector('.refresh-score');
-const msg = document.querySelector('.success-msg');
-
-// creating the msg here....
+const submitScore = document.querySelector('.submit-score');
+const msg = document.querySelector('.msg');
 
 refreshScore.addEventListener('click', (event) => {
   event.preventDefault();
-  getScores(scoresList);
+  getScores(listScores);
 });
 
 submitScore.addEventListener('click', (event) => {
   event.preventDefault();
-  const user = document.querySelector('.user').value;
-  const score = document.querySelector('.score').value;
-  addScore(scoresList, user, score, msg);
+  const user = document.querySelector('.user-name').value;
+  const score = document.querySelector('.user-score').value;
+  scoreAdd(listScores, user, score, msg);
 });
