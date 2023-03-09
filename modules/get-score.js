@@ -1,6 +1,7 @@
+// Get Score from the API
 const scoreGet = async (scores) => {
   const response = await fetch(
-    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/It81AjbxKICoXCJ7FKSL/scores/',
+    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/mg3gGm7wJnYF5Xnfw3GZ/scores/',
   );
   const json = await response.json();
   scores.innerHTML = '';

@@ -8,6 +8,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css"
+      integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Leaderboard</title>
   <script defer src="main.js"></script></head>
   <body>
@@ -16,17 +23,17 @@
     </header>
 
     <main>
-      <section>
+      <section class="all-container">
         <article class="scores-list-container">
-          <div>
-            <h2>Recent Scores</h2>
-            <button class="refresh">Refresh</button>
+          <div class="scoresNreset">
+            <h2 class="scores-title">Recent Scores</h2>
+            <button class="refresh-score" type="reset">Refresh</button>
           </div>
           <ul class="scores-list"></ul>
         </article>
-
+        <div class="middle-line"></div>
         <aside class="name-score">
-          <h3>Add your score</h3>
+          <h3 class="bg-add">Add your score</h3>
           <form action="" method="POST" class="add-nameNscore">
             <input
               type="text"
@@ -42,8 +49,9 @@
               id="score"
               placeholder="Your Score"
             />
-            <button class="submit-score"></button>
+            <button class="submit-score" type="submit">Submit</button>
           </form>
+          <div class="msg"></div>
         </aside>
       </section>
     </main>

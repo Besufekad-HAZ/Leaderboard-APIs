@@ -55,13 +55,13 @@ header {
   justify-content: space-between;
   margin: 5rem auto;
   padding: 3%;
-  gap: 8%;
+  gap: 7%;
   background-color: rgba(2, 69, 78, 0.8);
 }
 
 .scores-list-container {
-  width: 60%;
-  height: 50vh;
+  width: 70%;
+  height: 50%;
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
@@ -211,8 +211,8 @@ ul {
 
 .name-icon {
   font-size: large;
-  gap: 10%;
-  width: 30%;
+  gap: 6%;
+  width: 50%;
   display: flex;
   justify-content: left;
 }
@@ -245,8 +245,8 @@ ul {
   .all-container {
     flex-direction: column;
     width: 90%;
-    gap: 1rem;
     margin-top: 2%;
+    gap: 2rem;
   }
 
   .scores-list-container {
