@@ -6,98 +6,190 @@
   font-family: "lato", sans-serif;
 }
 
+html {
+  background: url(../assets/leader-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+}
+
 body {
   font-family: "lato", sans-serif;
   font-weight: 300;
-  width: 100%;
-  height: auto;
-  background: url(./todo.jfif);
-  background-repeat: no-repeat;
-  background-size: 85% 95%;
-  background-position: center;
 }
 
-.to-do-container {
-  width: 60%;
-  max-width: 1000px;
-  margin: 6% auto 9%;
-  border: 2px solid rgb(255, 255, 255);
-  background-color: rgb(5, 0, 0, 0.6);
-  padding: 5% 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+header {
+  width: 50%;
+  margin: 5% auto;
   align-items: center;
-}
-
-.form-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
-.title-container {
+.title {
+  padding: 3%;
+  color: rgb(255, 255, 255);
+  font-size: 3.4vmax;
+  background-color: rgba(2, 69, 78, 0.8);
+  border: 2px solid white;
+  border-radius: 20px;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+.all-container {
+  width: 93%;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  border: 4px solid #fff;
+  border-radius: 20px;
   justify-content: space-between;
-  align-content: center;
-  padding: 20px;
-  color: #fff;
+  margin: 5rem auto;
+  padding: 3%;
+  gap: 8%;
+  background-color: rgba(2, 69, 78, 0.8);
 }
 
-.title-container h1 {
-  text-decoration: underline;
-  font-size: calc(2.5rem + ((1vw - 1rem) * 2));
+.scores-list-container {
+  width: 60%;
 }
 
-.icon__refresh {
-  transform: rotate(90deg);
+.scoresNreset {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+}
+
+.scores-title {
+  font-size: calc(1rem + ((1vw + 1rem) * 0.6));
+}
+
+.refresh-score {
   cursor: pointer;
+  background: none;
+  width: 30%;
+  border: 1px solid rgba(255, 255, 255);
+  border-radius: 15px;
+  color: rgba(255, 255, 255);
+  font-size: 19px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 2.5em;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
+.refresh-score:hover {
+  background: rgba(255, 255, 255);
+  color: rgba(2, 69, 78);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.middle-line {
+  border: 1px solid white;
+}
+
+/* Second Section Add Name and Score starts here */
 form {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 5%;
   gap: 2%;
-  color: black;
-}
-
-input,
-select,
-textarea {
-  color: #000;
 }
 
 form input {
-  padding: 3%;
-  color: black;
+  padding: 5%;
+  background: transparent;
+  outline: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.5);
 }
 
-.all-tasks {
+.name-score {
+  font-size: larger;
+}
+
+.bg-add {
+  background-color: #fff;
+  color: rgba(2, 69, 78);
+  text-align: center;
+  border-radius: 5px;
+  padding: 2%;
+  font-size: 2.2vmax;
+}
+
+.add-nameNscore {
   width: 100%;
-  border: none;
-  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.icon_enter {
-  font-size: 25px;
-  font-weight: bold;
+.add-nameNscore input {
+  border: none;
+  margin-top: 10%;
+  font-size: calc(2rem + ((1vw - 1.2rem) * 1.1));
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+}
+
+::-moz-placeholder {
+  color: #fff;
+}
+
+:-moz-placeholder {
+  color: #fff;
+}
+
+:-ms-input-placeholder {
+  color: #fff;
+}
+
+.submit-score {
   cursor: pointer;
+  background: none;
+  width: 80%;
+  border: 1px solid rgba(255, 255, 255);
+  border-radius: 10px;
+  color: rgba(255, 255, 255);
+  font-size: 19px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 2.5em;
+  margin: 25% auto;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.submit-score:hover {
+  background: rgba(255, 255, 255);
+  color: rgba(2, 69, 78);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 ul {
   list-style: none;
 }
 
-li {
+.scores-list li {
   display: flex;
-  border-top: 1px solid rgb(237, 237, 237);
   border-bottom: 1px solid rgb(237, 237, 237);
-  padding: 0.9rem;
-  font-size: 1.2em;
+  padding: 0.7rem;
+  font-size: 1.1em;
   align-items: center;
   align-content: center;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -110,69 +202,105 @@ li {
     text-shadow:
       0 0 10px #fff,
       0 0 20px #fff,
-      0 0 30px #00d184,
-      0 0 40px #00d184,
-      0 0 50px #00d184,
-      0 0 60px #00d184,
-      0 0 70px #00d184;
+      0 0 30px #02817d,
+      0 0 40px #00d1c7,
+      0 0 50px #0adafa,
+      0 0 60px #00837c,
+      0 0 70px #00827d;
   }
 
   to {
     text-shadow:
       0 0 20px #fff,
-      0 0 30px #65f9c3,
-      0 0 40px #65f9c3,
-      0 0 50px #65f9c3,
-      0 0 60px #65f9c3,
-      0 0 70px #65f9c3,
-      0 0 80px #65f9c3;
+      0 0 30px #88fbff,
+      0 0 40px #88fbff,
+      0 0 50px #88fbff,
+      0 0 60px #88fbff,
+      0 0 70px #88fbff,
+      0 0 80px #88fbff;
   }
 }
 
-.checkbox {
-  width: 20px;
-  height: 20px;
-  margin: 10px;
-}
+@media screen and (max-width: 500px) {
+  .all-container {
+    flex-direction: column;
+    width: 90%;
+    gap: 1rem;
+    margin-top: 2%;
+  }
 
-li p {
-  width: 100%;
-  margin-left: 5px;
-}
+  .scores-list-container {
+    width: 90%;
+  }
 
-.draggable.dragging {
-  opacity: 0.1;
-  background-color: #7f8081;
-}
+  .scoresNreset {
+    justify-content: space-between;
+    width: 100%;
+  }
 
-.move_button {
-  cursor: move;
-}
+  form {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    padding: 0;
+  }
 
-.btn-delete {
-  cursor: pointer;
-  display: none;
-}
+  form input {
+    padding: 3%;
+    width: 80%;
+    background: transparent;
+    outline: none;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.5);
+  }
 
-.rename_task {
-  background-color: rgb(134, 17, 34);
-  width: 90%;
-}
+  .title {
+    padding: 1px;
+    color: rgb(255, 255, 255);
+    font-size: 2.6vmax;
+    background-color: rgba(2, 69, 78, 0.8);
+    border: 2px solid white;
+    border-radius: 20px;
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue",
+      sans-serif;
+  }
 
-#clear {
-  margin: 5% auto;
-  width: 50%;
-  padding: 3%;
-  height: auto;
-  font-size: 20px;
-  cursor: pointer;
-  background-color: transparent;
-  justify-self: center;
-  border: 2px solid white;
-  border-radius: 10px;
-}
+  .add-nameNscore {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-#clear:hover {
-  background-color: white;
-  color: black;
+  .add-nameNscore input {
+    border: none;
+    margin-top: 5%;
+    font-size: calc(2rem + ((1vw - 1.2rem) * 1.1));
+  }
+
+  .submit-score {
+    cursor: pointer;
+    background: none;
+    width: 60%;
+    border: 1px solid rgba(255, 255, 255);
+    border-radius: 10px;
+    color: rgba(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2.5em;
+    margin: 5% 2% auto;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
 }
