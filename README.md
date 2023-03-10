@@ -40,7 +40,7 @@
 
 A website for organizing daily activities
 
-["The-leaderboard"] :- is a website that displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
+["The-leaderboard"] :- is a website that displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service(using Notion).
 
 ## 🛠 Built With <a name="built-with">HTML,CSS and Javascript</a>
 
@@ -53,6 +53,7 @@ A website for organizing daily activities
     <li><a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS</a></li>
     <li><a href="https://www.javascript.com/">JavaScript</a></li>
     <li><a href="https://webpack.js.org/">Webpack</a></li>
+    <li><a href="https://www.notion.so/product?fredir=1">Notion for API's</a></li>
   </ul>
 </details>
 
@@ -78,6 +79,7 @@ A website for organizing daily activities
 - **[CSS]**
 - **[Javascript]** ---> with ES6
 - **[Webpack]**
+- **[API's(Notion)]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,7 +87,7 @@ A website for organizing daily activities
 
 ## 🚀 Screenshot <a name="screenshot"></a>
 
-![image](https://user-images.githubusercontent.com/23375153/221012988-791c6138-f87c-41e3-9a78-35ba4944ae8f.png)
+![image](https://user-images.githubusercontent.com/23375153/224085035-76f1202f-c6d9-4fb2-824d-7af93887b1ce.png)
 
 ## 💻 Loom Presentation Video <a name="loom-video"></a>
 
@@ -95,7 +97,7 @@ A website for organizing daily activities
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://besufekad-haz.github.io/To-Do-list/dist/)
+- [Live Demo Link](N/A)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -121,7 +123,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 cd my-folder
-git clone git@github.com:Besufekad-HAZ/To-Do-list.git (SSH)
+git clone git@github.com:Besufekad-HAZ/Leaderboard-APIs.git (SSH)
 
 ### Install
 
@@ -148,14 +150,6 @@ npx eslint .
 
 You can deploy this project using:
 Github Pages.
-
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -187,7 +181,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Besufekad-HAZ/To-Do-list/issues).
+Feel free to check the [issues page](https://github.com/Besufekad-HAZ/Leaderboard-APIs/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,7 +197,7 @@ If you like this project rate it and give it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
---> I would like to thank the Microverse team for allowing us to work on this project.
+--> I would like to thank the Microverse team for allowing us to work on this Leaderboard API project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

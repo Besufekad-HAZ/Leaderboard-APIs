@@ -8,6 +8,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css"
+      integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Leaderboard</title>
   </head>
   <body>
@@ -22,13 +29,7 @@
             <h2 class="scores-title">Recent Scores</h2>
             <button class="refresh-score" type="reset">Refresh</button>
           </div>
-          <ul class="scores-list">
-            <li>Besu:200</li>
-            <li>Aman:150</li>
-            <li>Midne:134</li>
-            <li>Joblu:130</li>
-            <li>Rayo:74</li>
-          </ul>
+          <ul class="scores-list"></ul>
         </article>
         <div class="middle-line"></div>
         <aside class="name-score">
@@ -43,13 +44,14 @@
               pattern="([A-ZΆ-ΫÀ-ÖØ-Þ][A-ZΆ-ΫÀ-ÖØ-Þa-zά-ώß-öø-ÿ]{1,19} ?){1,10}"
             />
             <input
-              type="text"
+              type="number"
               class="user-score"
               id="score"
               placeholder="Your Score"
             />
             <button class="submit-score" type="submit">Submit</button>
           </form>
+          <div class="msg"></div>
         </aside>
       </section>
     </main>

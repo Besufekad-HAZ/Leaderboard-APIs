@@ -55,12 +55,15 @@ header {
   justify-content: space-between;
   margin: 5rem auto;
   padding: 3%;
-  gap: 8%;
+  gap: 7%;
   background-color: rgba(2, 69, 78, 0.8);
 }
 
 .scores-list-container {
-  width: 60%;
+  width: 70%;
+  height: 50%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .scoresNreset {
@@ -185,6 +188,10 @@ ul {
   list-style: none;
 }
 
+.user-img {
+  width: 20px;
+}
+
 .scores-list li {
   display: flex;
   border-bottom: 1px solid rgb(237, 237, 237);
@@ -195,6 +202,19 @@ ul {
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
+}
+
+.list-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-icon {
+  font-size: large;
+  gap: 6%;
+  width: 50%;
+  display: flex;
+  justify-content: left;
 }
 
 @-webkit-keyframes glow {
@@ -225,8 +245,8 @@ ul {
   .all-container {
     flex-direction: column;
     width: 90%;
-    gap: 1rem;
     margin-top: 2%;
+    gap: 2rem;
   }
 
   .scores-list-container {
